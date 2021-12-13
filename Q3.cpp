@@ -39,7 +39,27 @@ The program should contain:
 Feel free to add any other methods or data members to the classes other than the ones I’ve mentioned if it will help you implement any of the required
 features.
 
+int sum;
+int sum_while(int n)
+{
+  sum=0;
+  int i = 1;
+  while(i<=n)
+  {
+    sum += i;
+    i++;
+  }
+  return sum;
+}
 
+int main()
+{
+  int range, result;
+  printf("Enter positive number it should be greater than 0: ");
+  scanf("%d", &range);
+  result = sum_while(range);
+  printf("the sum is %d",result);
+}
 4) Write a main function driver for these classes that creates objects of type Curve1 and Curve2 and asks the user to input a list of test scores into each object and
 then runs the Output functions from each object. 
 */
